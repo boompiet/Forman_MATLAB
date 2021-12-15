@@ -27,7 +27,7 @@ vcmplx(3).name='face';   vcmplx(4).name='polyhedron';
 % -------------------------------------------------------------------------
 % read Neper .tess file for Voronoi complex
 % -------------------------------------------------------------------------
-filename = 'n100-id1.tess';                 % irregular mesh
+filename = 'n2500-id1.tess';                 % irregular mesh
 % filename = 'nfrom_morpho-cube(2).tess';     % regular orthogonal mesh
 disp(['>> read Neper .tess file (',filename,') for Voronoi complex'])
 [vcmplx] = read_tess(filename,vcmplx);
