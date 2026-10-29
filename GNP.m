@@ -58,7 +58,7 @@ for cnt = 1:num_MC
         t_old = zeros(fcmplx(1).num(1).val,1); t_old(z==1) = 1;
         t_new = A(int_indx,int_indx)\b(int_indx); t_old(int_indx) = t_new;
         
-        flux = abs(k * fs2 * fBO_1 * t_old);
+        flux = abs(k * innerEE * fBO_1 * t_old);
         
         zsf_v = zeros(size(fcmplx(1).bc(:,3)));  zsf_v(fcmplx(1).bc(:,3)<small)=1;
         zsf_e = abs(fBO_1)*zsf_v;  zsf_e(zsf_e>1)=0;
